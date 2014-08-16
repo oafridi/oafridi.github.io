@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+    <script type="text/javascript" src="../scripts/date.js"></script>
+</head>
+
+<body>
+    <h1>What is the difference between Margin, Border, and Padding?</h1>
+    <h4>Posted by Osman,
+        <span id="spanDate"></span>
+    </h4>
+    <img class="blog_img" src="../imgs/box-model.gif" alt="Add a blog image here">
+    <div class="blog_post">
+        <p>When it comes to CSS a conversation about margins, borders and padding would have to begin with a discussion about the box model. So what is it?</p>
+
+        <a href="../imgs/box-model.gif"></a>
+
+        <p>The box model is pretty simple as you can see from the image. And consists of three different parts:
+            <ol>
+                <li>Margin - area around the border</li>
+                <li>Border - goes around the padding and the content</li>
+                <li>Padding - goes around the content</li>
+            </ol>
+
+            Lets look at an example of some CSS:
+
+            <pre>
+              <code>div { width: 220px; padding: 10px; border: 5px solid gray; margin: 0px; }</code>
+            </pre>
+
+            What's important to note is that despite the fact the width has been set to 220px the total width of the element should take into account the padding, the border and margin if they have been given values.
+
+            You may be wondering why he have margins, borders and padding and when to use each. A quick rundown of the differences :
+
+            <ul>
+              <li>The border as its name would suggest can add a border around your element. This is useful if you want to box off certain elements or create a separation between elements.</li>
+              <li>The padding is the extra space between the border and the element. You might use this to create more of a space between the border and the element</li>
+              <li>The margin is the  space outside of the border and any other elements. You might use this to create spacing between blog posts for example</li>
+            </ul>
+
+            Hopefully this brief introduction helped clear up a few things for you. Drop me an email if you have any questions!
+
+        </p>
+    </div>
+</body>
+
+</html>
