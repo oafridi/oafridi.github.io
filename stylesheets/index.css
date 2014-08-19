@@ -4,9 +4,17 @@
 }
 
 body {
-  width: 90%;
+  /*background-image: url(../imgs/highlight-bg.jpg);*/
+  width: 80%;
   margin: 0 auto;
-  font-family: "Kimberley";
+  /*font-family: "Kimberley";*/
+  background: #e7e7e7 url(../images/body-bg.png) 0 0 repeat;
+  font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+  line-height: 1.5;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+  color: #6d6d6d;
+  overflow: auto;
+  font-weight: 300;
 }
 
 .social a img {
@@ -15,21 +23,25 @@ body {
 
 header {
   overflow: auto;
-  font-size: 2em;
+  font-size: 2.5em;
+  font-family: "Kimberley";
 }
 
 h3 {
-   text-decoration: underline;
+   text-decoration: none;
+   color: #d5000d;
 }
 
 footer {
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1em;
+  color: #aaa;
+  font-weight: 500;
 }
 
 .main {
   overflow: auto;
-  font-size: 1.5em;  
+  font-size: 1.2em;  
 }
 
 .about, header, footer, .profile {
@@ -38,7 +50,6 @@ footer {
 
 .about {
   float: left;
- 
   width: 40%;
   margin: 1% 1% 1% 4%;
   padding: 1% 1% 1% 5%;
@@ -66,9 +77,6 @@ img:hover {
 }
 
 nav {
-
-  /*text-align: center;*/
-
   float: left;
   width: 40%;  
   margin: 1% 1% 0% 1%;
