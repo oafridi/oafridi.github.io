@@ -1,10 +1,102 @@
-.blog_img {
-  width: 18em;
+img {
+  max-width: 300px;
 }
 
-.blog_post {
+@font-face {
+  font-family: "Kimberley";
+  src: url(../fonts/YanoneKaffeesatz-Regular.ttf) format("truetype");
+}
+
+body {
+  /*background-image: url(../imgs/highlight-bg.jpg);*/
+  width: 80%;
+  margin: 0 auto;
+  /*font-family: "Kimberley";*/
+  background: #e7e7e7 url(../images/body-bg.png) 0 0 repeat;
+  font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+  line-height: 1.5;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+  color: #6d6d6d;
+  overflow: auto;
+  font-weight: 300;
+}
+
+.social a img {
+  max-width: 10%;
+}
+
+header {
+  overflow: auto;
+  font-size: 2.5em;
+  font-family: "Kimberley";
+}
+
+h3 {
+   text-decoration: none;
+   color: #d5000d;
+}
+
+footer {
+  text-align: center;
   font-size: 1em;
-  width: 50%;
-  border-bottom: 1px solid;
-  font-size: 1.2em;
+  color: #aaa;
+  font-weight: 500;
+}
+
+.main {
+  overflow: auto;
+  font-size: 1.2em;  
+}
+
+.about, header, footer, .profile {
+
+}
+
+.about {
+  float: left;
+  width: 40%;
+  margin: 1% 1% 1% 4%;
+  padding: 1% 1% 1% 5%;
+
+}
+
+.profile {
+  text-align: center;
+  float: right;
+  width: 40%;
+  margin: 1% 4% 1% 0;
+  padding: 5% 4% 1% 1%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
+img:hover {
+  color: black;
+}
+
+nav {
+  float: left;
+  width: 40%;  
+  margin: 1% 1% 0% 1%;
+  display: inline;
+  padding: 1% 1% 0% 7%;
+}
+
+nav a, .social a {
+  padding: 3%;
+}
+
+.social {
+  text-align: center;
+  margin: 1% 1% 1% 1%;
+  float: right;
+  width: 45%;
+  display: inline;
+  padding: 1% 1% 1% 1%;
 }
