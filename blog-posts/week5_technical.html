@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+  <script type="text/javascript" src="../scripts/date.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <nav>
+        <a href="http://oafridi.github.io/">Home</a>
+        <a href="http://oafridi.github.io/projects/index.html">Projects</a>
+        <a href="http://oafridi.github.io/blog-posts/index.html">Blog</a>
+        <a href="mailto:osmanisalso@gmail.com">@Email</a>
+      </nav>
+    </header>
+
+    <div class="main">
+      <section class="about">
+        <h1>Object Oriented programming in Ruby</h1>
+        <h5>Posted by Osman,
+          <span id="spanDate"></span>
+        </h5>
+        <!-- <img class="blog_img" src="../imgs/JW_Marriott_CHEF_NOLA.jpg" alt="Add a blog image here"> -->
+        <div class="blog_post">
+          <p>Let's dive straight into ruby classes. We're going to build a class that will help keep a record of students in our fictional high school - DBC High. The students will have various data associated with them, to keep it simple we're going to add just three to begin with. These will form the attributes of our class: 
+          <ul> 
+            <li>first name</li>
+            <li>last name</li>
+            <li>date of birth</li>              
+          </ul>
+          </p>
+
+          <p>Let's start by defining our class</p>
+
+          <pre>
+            <code> 
+              class Student                          
+              end            
+            </code>
+          </pre>
+
+          <p>Now when we create a new student we can instantiate this class. Instantiation is the way we create an instance of our class. We do this using the 'new' keyword. For example 'John Major' has just joined our school, let's create a new student: </p>
+
+          <pre>
+            <code> 
+              john_major = Student.new            
+            </code>
+          </pre>
+
+          <p>We now have a john_major object created from the Student class. However we don't have any of the attributes for John that we need - his date of birth, name etc. So how do we do that? Well these attributes will be passed to our class so we need some way of receiving them. In Ruby we can do this using an 'initialize' method which will take the values we pass our Class. Let's see how this works:</p>
+
+          <pre>
+            <code> 
+              class Student
+                def initialize(first_name,last_name,dob)
+                  @first_name = first_name
+                  @last_name = last_name
+                  @dob = dob
+                end                          
+              end            
+            </code>
+          </pre>
+
+          <p>Notice the @ sign in front of some variables. These are instance variables and belong to the instance. Now let's go ahead and create the john_major object again but this time with the attributes: </p>
+
+          <pre>
+            <code> 
+              john_major = Student.new("John", "Major", 35)            
+            </code>
+          </pre>
+
+          <p>We now have a john_major object which contains data related to John. We can see his age easily using the following notation: john_major.dob => 01/18/1983</p>
+
+          <p>As well as the attributes we also want to know the students age without having to calculate it ourselves. Therefore let</p>
+
+          <p>First we define the class body:</p>
+
+          
+
+          <p>Then we define the methods:</p>
+
+          <pre>
+            <code> 
+              class Calculator                          
+                def add(a,b)
+                end
+
+                def subtract(a,b)
+                end
+              end            
+            </code>
+          </pre>
+
+          <p>The first thing to notice is that these are both instance methods. Instance methods don't belong to the class but to the instance of the class. We'll see in a minute how to  to instantiate a class but first let's define our methods. We can see that each takes two arguments and will return either the values added together or subtracted: </p>
+
+          <pre>
+            <code> 
+              class Calculator                          
+              end            
+            </code>
+          </pre>
+
+          <p>Then we define the methods:</p>
+
+          <pre>
+            <code> 
+              class Calculator                          
+                def add(a,b)
+                  a+b
+                end
+
+                def subtract(a,b)
+                  a-b
+                end
+              end            
+            </code>
+          </pre>
+
+
+
+        </div>
+        <a href="http://osmanafridi.com/blog-posts/index.html">Back</a>
+      </section>
+    </div>
+    <footer>(c) Osman Afridi 2014</footer>
+  </div>
+</body>
+
+</html>

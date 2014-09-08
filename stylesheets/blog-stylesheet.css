@@ -57,8 +57,8 @@ footer {
 }
 
 .about {
-  float: left;
-  width: 40%;
+  /*float: left;*/
+  width: 60%;
   margin: 1% 1% 1% 4%;
   padding: 1% 1% 1% 5%;
 
