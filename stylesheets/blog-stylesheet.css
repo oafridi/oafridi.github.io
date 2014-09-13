@@ -1,5 +1,11 @@
-h1,h4 {
+h1{
   color: black;
+  font-size: 1.25em;
+}
+
+h2, h3, h4 {
+   text-decoration: none;
+   color: #d5000d;
 }
 
 img {
@@ -31,13 +37,8 @@ body {
 
 header {
   overflow: hidden;
-  font-size: 2.5em;
+  font-size: 2.8em;
   font-family: "Kimberley";
-}
-
-h3 {
-   text-decoration: none;
-   color: #d5000d;
 }
 
 footer {
@@ -53,7 +54,6 @@ footer {
 }
 
 .about {
-  /*float: left;*/
   width: 60%;
   margin: 1% 1% 1% 4%;
   padding: 1% 1% 1% 5%;
@@ -74,6 +74,10 @@ a {
 
 a:hover {
   color: black;
+}
+
+a:visited{
+  color:blue;
 }
 
 img:hover {
