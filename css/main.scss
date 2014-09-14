@@ -1,0 +1,144 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Our variables
+$base-font-family: Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #6d6d6d;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+// Using media queries with like this:
+// @include media-query($palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+        "syntax-highlighting"
+;
+
+.social a img {
+  max-width: 10%;
+}
+
+header {
+  overflow: hidden;
+  // font-size: 2.8em;
+  font-family: "Kimberley";
+}
+
+footer {
+  text-align: center;
+  font-size: 1em;
+  color: #aaa;
+  font-weight: 500;
+}
+
+.main {
+  overflow: auto;
+  font-size: 1.2em;  
+}
+
+.about, header, footer, .profile {
+
+}
+
+.about {
+  float: left;
+  width: 40%;
+  margin: 1% 1% 1% 4%;
+  padding: 1% 1% 1% 5%;
+
+}
+
+.profile {
+  text-align: center;
+  float: right;
+  width: 40%;
+  margin: 1% 4% 1% 0;
+  padding: 5% 4% 1% 1%;
+}
+
+a img {
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+
+a img:hover {
+  -webkit-transform: rotate(-10deg);
+     -moz-transform: rotate(-10deg);
+       -o-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+
+a:hover {
+  color: black;
+}
+
+img:hover {
+  color: black;
+}
+
+nav {
+  float: left;
+  width: 40%;  
+  margin: 1% 1% 0% 1%;
+  display: inline;
+  padding: 1% 1% 0% 7%;
+}
+
+nav a {
+  color: #03c;
+    -webkit-transition: 0.5s;
+     -moz-transition: 0.5s;
+     -o-transition: 0.5s;
+     -ms-transition: 0.5s;
+     transition: 0.5s;
+}
+
+nav a:hover {
+  color: transparent;
+    text-shadow: 0 0 5px #03c;
+}
+
+nav a, .social a {
+  padding: 3%;
+}
+
+.social {
+  text-align: center;
+  margin: 1% 1% 1% 1%;
+  float: right;
+  width: 45%;
+  display: inline;
+  padding: 1% 1% 1% 1%;
+}
