@@ -3,27 +3,30 @@ layout: default
 ---
 <section class="about">
   <h1>Classes vs Modules</h1>
-  <h5>Posted by Osman,
-    <span id="spanDate"></span>
+  <h5>Posted by Osman, 2014-09-13
   </h5>
   <!-- <img class="blog_img" src="../imgs/" alt="Add a blog image here"> -->
   <div class="blog_post">
     <p>
-      In Ruby there is only single inheritance, if you want multiple inheritance go use C++... actually hang on. While it is true that Class B can only ever inherit from class A *or* class C but never both, it is possible to include methods defined elsewhere. But why would you want to? Why not just define the behavior in class B and be done with it. Well the situation inevitably arises where class B would like a function that isn't in class A. Class B could choose to define the function within its own class, but along comes another 10 classes and they all want the same function. It would be nicer if we could define it in one place and share it amongst all our classes. And that's where Modules come in.
+      In Ruby there is only single inheritance, if you want multiple inheritance go use C++... actually... hang on. While it is true that Class B can only ever inherit from class A *or* class C but never both, it is possible to include methods defined elsewhere.
     </p>
+    <p>But why would you want to? Why not just define the behavior in class B and be done with it. Well the situation inevitably arises where class B would like a function that isn't in class A. It could choose to define the function within its own class, but along comes another 10 classes and they all want the same function. It would be nicer if we could define it in one place and share it amongst all our classes. And that's where Modules come in.
+    </p>
+
+    <h4>Modules</h4>
     <p>A module is a way to provide behavior to a class. Within a module you can add behavior and any class or object can include the module in order to use that behavior - this is known as mixing in.
     </p>
 
-    <pre>
-            <code>
-              module Greeter
-                def greet
-                  puts "Hello!"
-                end
-              end
-            </code>
-          </pre>
 
-  </div>
-  <a href="{{ site.baseurl }}/blog-posts/index.html">Back</a>
+    {% highlight ruby %} 
+    module Greeter
+      def greet
+        puts "Hello!"
+      end
+    end
+    {% endhighlight %}
+
+ </div>
+<a href="{{ site.baseurl }}/blog-posts/index.html">Back</a>
 </section>
+

@@ -25,10 +25,11 @@ body {
     margin: 0 auto;
     background: #e7e7e7 url(../images/body-bg.png) 0 0 repeat;
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+    overflow: auto;
 }
 
 /**
- * Set `margin-bottom` to maintain vertycal rhythm
+ * Set `margin-bottom` to maintain vertical rhythm
  */
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
@@ -43,7 +44,7 @@ ul, ol, dl, figure,
  * Images
  */
 img {
-    max-width: 100%;
+    max-width: 40%;
     vertical-align: middle;
 }
 
@@ -85,6 +86,11 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
 }
 
+h1,h2,h3 {
+    
+    color: $header-color;
+}
+
 
 
 /**
@@ -100,7 +106,6 @@ a {
 
     &:hover {
         color: $text-color;
-        text-decoration: underline;
     }
 }
 

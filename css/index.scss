@@ -8,112 +8,34 @@
 
 // Variables
 $header-color: #d5000d;
+$base-font-family: Helvetica, Arial, sans-serif;
+$base-font-size:   14px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
 
-body {
-    width: 80%;
-    margin: 0 auto;
-    background: #e7e7e7 url(../images/body-bg.png) 0 0 repeat;
-    font-family: Helvetica, Arial, serif;
-    line-height: 1.5;
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
-    color: #6d6d6d;
-    overflow: auto;
-    font-weight: 300;
-}
+$spacing-unit:     50px;
 
-header {
-    overflow: auto;
-    font-size: 2.8em;
-    font-family: "Kimberley";
-}
+$text-color:       #6d6d6d;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
 
-footer {
-    text-align: center;
-    font-size: 1em;
-    color: #aaa;
-    font-weight: 500;
-}
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
 
-h1,h2,h3 {
-    text-decoration: none;
-    color: $header-color;
-}
+$on-palm:          600px;
+$on-laptop:        800px;
 
-a {
-    text-decoration: none;
-    &:hover {
-        color: red;
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
     }
 }
 
-nav {
-    float: left;
-    width: 40%;
-    margin: 1% 1% 0% 1%;
-    display: inline;
-    padding: 1% 1% 0% 7%;
-    a {
-        color: #03c;
-        padding: 3%;
-        -webkit-transition: 0.5s;
-        -moz-transition: 0.5s;
-        -o-transition: 0.5s;
-        -ms-transition: 0.5s;
-        transition: 0.5s;
-        &:hover {
-            color: transparent;
-            text-shadow: 0 0 5px #03c;
-        }
-    }
-}
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+        "syntax-highlighting"
+;
 
-img {
-  max-width: 200px;
-}
-
-.social {
-    text-align: center;
-    margin: 1% 1% 1% 1%;
-    float: right;
-    width: 45%;
-    display: inline;
-    padding: 1% 1% 1% 1%;
-    a {
-        padding: 3%;
-        img {
-            max-width: 10%;
-            -webkit-transition: all 0.5s ease;
-            -moz-transition: all 0.5s ease;
-            -o-transition: all 0.5s ease;
-            -ms-transition: all 0.5s ease;
-            transition: all 0.5s ease;
-            &:hover {
-                -webkit-transform: rotate(-10deg);
-                -moz-transform: rotate(-10deg);
-                -o-transform: rotate(-10deg);
-                -ms-transform: rotate(-10deg);
-                transform: rotate(-10deg);
-            }
-        }
-    }
-}
-
-.main {
-    overflow: auto;
-    font-size: 1.2em;
-}
-
-.about {
-    float: left;
-    width: 40%;
-    margin: 1% 1% 1% 4%;
-    padding: 1% 1% 1% 5%;
-}
-
-.profile {
-    text-align: center;
-    float: right;
-    width: 40%;
-    margin: 1% 4% 1% 0;
-    padding: 5% 4% 1% 1%;
-}
