@@ -1,87 +1,48 @@
 ---
 layout: page
 comments: true
+title: "Object Oriented Programming in Ruby"
 ---
-  <h1>Object Oriented Programming in Ruby</h1>
-  <h5>Posted by Osman,
-    <span id="spanDate">7th Sept 2014</span>
-  </h5>
-  <!-- <img class="blog_img" src="../imgs/JW_Marriott_CHEF_NOLA.jpg" alt="Add a blog image here"> -->
-  <div class="blog_post">
-    <p>Let's dive straight into ruby classes. We're going to build a class that will help keep a record of British prime ministers. Each prime minister has various data associated with them, to keep it simple we're going to add just three to begin with. These will form the attributes of our class:
-      <ul>
-        <li>first name</li>
-        <li>last name</li>
-        <li>year of birth</li>
-      </ul>
-    </p>
+<p>Let's dive straight into ruby classes. We're going to build a class that will help keep a record of British prime ministers. Each prime minister has various data associated with them, to keep it simple we're going to add just three to begin with. These will form the attributes of our class:
+  <ul>
+    <li>first name</li>
+    <li>last name</li>
+    <li>year of birth</li>
+  </ul>
+</p>
 
-    <p>Let's start by defining our class</p>
+<p>Let's start by defining our class</p>
 
-    {% highlight ruby %}
-    class PrimeMinister                          
-end            
-    {% endhighlight %}
+{% highlight ruby %} class PrimeMinister end {% endhighlight %}
 
-    <p>Now when a new prime minister is elected we can add them by simply instantiating this class. Think of the class as a blueprint and the instance of the class as the actual object we are creating. To instantiate we use the 'new' keyword. For example 'John Major' has just become prime minister, let's create a new PrimeMinister:</p>
+<p>Now when a new prime minister is elected we can add them by simply instantiating this class. Think of the class as a blueprint and the instance of the class as the actual object we are creating. To instantiate we use the 'new' keyword. For example 'John Major' has just become prime minister, let's create a new PrimeMinister:</p>
 
-    {% highlight ruby %}
-              john_major = PrimeMinister.new            
-            {% endhighlight %}
+{% highlight ruby %} john_major = PrimeMinister.new {% endhighlight %}
 
-    <p>We now have a john_major object created from the PrimeMinister class. However we don't have any of the attributes for John that we need - his year of birth, name etc. So how do we do that? Well these attributes will be passed as parameters so we need some way of receiving them. In Ruby we can do this using an 'initialize' method which will take the values we pass and store them to our object (initialize is similar to a constructor in languages such as Java). Let's see how this works:</p>
+<p>We now have a john_major object created from the PrimeMinister class. However we don't have any of the attributes for John that we need - his year of birth, name etc. So how do we do that? Well these attributes will be passed as parameters so we need some way of receiving them. In Ruby we can do this using an 'initialize' method which will take the values we pass and store them to our object (initialize is similar to a constructor in languages such as Java). Let's see how this works:</p>
 
-    {% highlight ruby %}
-    class PrimeMinister
-      def initialize(first_name,last_name,year)
-        @first_name = first_name
-        @last_name = last_name
-        @year = year
-      end                          
-    end            
-    {% endhighlight %}
+{% highlight ruby %} class PrimeMinister def initialize(first_name,last_name,year) @first_name = first_name @last_name = last_name @year = year end end {% endhighlight %}
 
-    <p>Notice the @ sign in front of some variables. These are instance variables and belong to the instance - they don't share values with other instances. Now let's go ahead and create the john_major object again but this time with the attributes:</p>
+<p>Notice the @ sign in front of some variables. These are instance variables and belong to the instance - they don't share values with other instances. Now let's go ahead and create the john_major object again but this time with the attributes:</p>
 
-    {% highlight ruby %}
-              john_major = PrimeMinister.new("John", "Major", 1944)            
-            {% endhighlight %}
+{% highlight ruby %} john_major = PrimeMinister.new("John", "Major", 1944) {% endhighlight %}
 
-    <p>We now have a john_major object which contains data related to John. But how can we see this data? Instance variables are visible to the class but in order to get access to them from outside of the class we need some method to display them. We can use special methods known as getter methods for this. Let's see how a getter method can be used to get the first and last name of our student:</p>
+<p>We now have a john_major object which contains data related to John. But how can we see this data? Instance variables are visible to the class but in order to get access to them from outside of the class we need some method to display them. We can use special methods known as getter methods for this. Let's see how a getter method can be used to get the first and last name of our student:</p>
 
-    {% highlight ruby %} 
-    class PrimeMinister
-      def getInfo
-        "#{@first_name} #{@last_name} #{year}"
-      end                        
-    end            
-    {% endhighlight %}
+{% highlight ruby %} class PrimeMinister def getInfo "#{@first_name} #{@last_name} #{year}" end end {% endhighlight %}
 
-    <p>And now to access:</p>
-    {% highlight ruby %}
-      john_major.getInfo             
-    {% endhighlight %}
+<p>And now to access:</p>
+{% highlight ruby %} john_major.getInfo {% endhighlight %}
 
-    <p>Which returns the info - 'John Major 1944'.</p>
+<p>Which returns the info - 'John Major 1944'.</p>
 
-    <p>However John Major has inspected our instance we created for him and reminds us that he was actually born in 1943... how could we change that? One way would be to create an entirely new object and pass the year once again. But we would then end up with lots of redundant objects. A better way would be to create what is known as a setter method. Let's see how that works.</p>
+<p>However John Major has inspected our instance we created for him and reminds us that he was actually born in 1943... how could we change that? One way would be to create an entirely new object and pass the year once again. But we would then end up with lots of redundant objects. A better way would be to create what is known as a setter method. Let's see how that works.</p>
 
-    {% highlight ruby %}
-    class PrimeMinister
-      def setYear(year)
-        @year = year
-      end                        
-     end            
-    {% endhighlight %}
+{% highlight ruby %} class PrimeMinister def setYear(year) @year = year end end {% endhighlight %}
 
-    <p>And to use it we could simply invoke the method and pass our new year like so</p>
-    {% highlight ruby %} 
-              john_major.setYear(1943)
-           {% endhighlight %}
+<p>And to use it we could simply invoke the method and pass our new year like so</p>
+{% highlight ruby %} john_major.setYear(1943) {% endhighlight %}
 
-    <p>And now John's year of birth has changed and he's a happy man.</p>
+<p>And now John's year of birth has changed and he's a happy man.</p>
 
-    <img src="../imgs/john.jpeg" alt="Johnny Major">
-
-  </div>
-  <p> <a href="{{ site.baseurl }}/blog-posts/index.html">Back</a> </p>
+<p><img src="../imgs/john.jpeg" alt="Johnny Major"></p>
