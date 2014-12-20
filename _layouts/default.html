@@ -1,22 +1,19 @@
 <!DOCTYPE html>
 <html>
-
-{% include head.html %}
-
+<head>
+  <meta charset="UTF-8">
+  <title>Home of Osman Afridi</title>
+  <link rel="stylesheet" href="{{ "/css/index.css" | prepend: site.baseurl }}">
+</head>
 <body>
-
   {% include header.html %}
-
   <div class="page-content">
     <div class="main">
-      <section class="about">
-        {{ content }}        
+      <section class="about page-wrap">
+        {{ content }}
       </section>      
     </div>
   </div>
-
   {% include footer.html %}
-
 </body>
-
 </html>
