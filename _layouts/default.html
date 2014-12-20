@@ -9,11 +9,13 @@
   {% include header.html %}
   <div class="page-content">
     <div class="main">
-      <section class="about page-wrap">
-        {{ content }}
+      <section class="about" id="content">
+        {{ content }}        
       </section>      
     </div>
   </div>
+  <div id="footer">
   {% include footer.html %}
+  </div>
 </body>
 </html>
