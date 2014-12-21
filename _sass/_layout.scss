@@ -23,7 +23,7 @@ nav {
             color: black;
         }
         &:hover {
-            color: red;
+            color: blue;
         }        
     }
 }
@@ -68,9 +68,22 @@ nav {
 }
 
 .profile {
-    text-align: center;
-    float: right;
-    width: 40%;
-    margin: 1% 4% 1% 0;
-    padding: 5% 4% 1% 1%;
+    // text-align: center;
+    // background-image: url("/imgs/profile.png");
+    height: 173px;
+    width: 160px;
+    position: relative;
+    top: 150px;
+    right: 150px;
+    float: right;        
+}
+
+#email {
+    position: relative;
+    left:50px;
+    top: 170px;
+    color: #aaa;
+    &:hover {
+        color: blue;
+    } 
 }
