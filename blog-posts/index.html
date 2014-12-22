@@ -3,18 +3,11 @@ layout: default
 ---
 <div class="about">
   <h1>Blog</h1>
-    <ul>
-    </ul>
-  <h3>Arduino </h3>
-  <h3>Technical Musings</h3>
-    <ul>
-        <li><a href="enumerable.html">Enumerable methods</a></li>
-        <li><a href="oop.html">Down with OOP</a></li>
-        <li><a href="nosql.html">To SQL or not to SQL</a></li>
-    </ul>
-  <h3>Cultural musings</h3>
-  <ul>
-    <li><a href="thinking_styles.html">Thinking and learning styles</a></li>
-    <li><a href="sexism.html">What's eating the tech industry</a></li>
-  </ul>
+  {% for post in site.posts %}
+  <p><small><strong>{{ post.date | date: "%B %e, %Y" }}</strong> . {{ post.category }} . <a href="http://erjjones.github.com{{ post.url }}#disqus_thread"></a></small></p>   
+      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+       {{ post.excerpt }}
+       Tags: {{ post.tags }}              
+  {% endfor %}
+
 </div>
