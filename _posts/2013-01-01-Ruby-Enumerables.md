@@ -1,6 +1,7 @@
 ---
 layout: post
 comments: true
+tags: enumerables ruby
 title: "Enumerable Methods"
 ---
 <p>The enumerable mixin provides a number of very useful methods such as collect and find. A mixin is a module which can be 'mixed in' to a class to add extra functionality (it's one of the ways Ruby can overcome the limitations of single inheritance). As a side note - any class that 'mixes in' the Enumerable module has to define the #each method. The methods of Enumerable can be seen in the <a href="http://ruby-doc.org/core-2.0.0/Enumerable.html">ruby-docs (ruby 2.0.0).</a> However the method I'm going to concentrate on in this post is group_by. Details below...</p>

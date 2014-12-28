@@ -16,7 +16,7 @@ nav {
     display: inline;
     padding: 1% 1% 0% 7%;    
     a { 
-        font-size: 2vw;       
+        font-size: 1.8vw;       
         color: black;
         padding: 2%;
         &:visited {
@@ -38,7 +38,7 @@ nav {
     a {
         padding: 3%;
         img {
-            max-width: 10%;
+            max-width: 8%;
             -webkit-transition: all 0.5s ease;
             -moz-transition: all 0.5s ease;
             -o-transition: all 0.5s ease;
@@ -57,7 +57,7 @@ nav {
 
 .main {
     overflow: auto;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 .about {
@@ -86,4 +86,21 @@ nav {
     &:hover {
         color: blue;
     } 
+}
+
+.tag-title {
+    display: inline-block;
+}
+
+.tag-list {
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+    li {
+        border: 1px solid #CCC;
+        display: inline-block;
+        border-radius: 10px;
+        padding: 5px 10px;
+        text-transform: capitalize;
+    }
 }
