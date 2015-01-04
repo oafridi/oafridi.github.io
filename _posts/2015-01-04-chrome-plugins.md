@@ -13,7 +13,7 @@ This post is a quick rundown of some tools I use to enhance productivity. First 
 
 What webtimer does is keep a record of the amount of time you spend on various websites.
 
-![weekly average](/imgs/posts/webtimer.png)
+<a href="/imgs/posts/webtimer.png" data-lightbox="image-1" data-title="Webtimer">![weekly average](/imgs/posts/webtimer.png)</a>
 
 
 #### <a href="https://chrome.google.com/webstore/detail/disable-extensions-tempor/lcfdefmogcogicollfebhgjiiakbjdje?hl=en">Disable Extensions Temporarily</a>
