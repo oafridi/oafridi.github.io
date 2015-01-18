@@ -1,5 +1,6 @@
 header {
     overflow: auto;
+    margin: 0 7% 0 7%
 }
 
 footer {
@@ -60,16 +61,13 @@ nav {
     font-size: 1.1em;
 }
 
-.about {
-    float: left;
-    width: 40%;
-    margin: 1% 1% 1% 4%;
+.about {    
+    width: 70%;
+    margin: 1% 1% 1% 10%;
     padding: 1% 1% 1% 5%;
 }
 
 .profile {
-    // text-align: center;
-    // background-image: url("/imgs/profile.png");
     height: 173px;
     width: 160px;
     position: relative;
