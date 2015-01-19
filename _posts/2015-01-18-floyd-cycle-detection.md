@@ -11,8 +11,8 @@ summary: An exploration of Floyd's cycle detection algorithm
 
 <p>Anyhow how it works is fairly simple. You start with two pointers both pointing at the head of the list.</p>
 
-<a href="/imgs/posts/webtimer.png" data-lightbox="image-1" data-title="Webtimer">![weekly average](/imgs/posts/fca_1.png)</a>
+<a href="/imgs/posts/fca_1.png" data-lightbox="image-1" data-title="1">![1](/imgs/posts/fca_1.png)</a>
 
-<p>The key point of the detection algorithm is that one pointer - the hare travels as twice as fast the other - the tortoise. If there was a loop the second pointer would travel the loop and eventually meet the first pointer.</p>
+<p>The key point of the detection algorithm is that one pointer - the hare travels as twice as fast the other - the tortoise. If there is a loop the second pointer would travel the loop and eventually meet the first pointer.</p>
 
-<a href="/imgs/posts/webtimer.png" data-lightbox="image-1" data-title="Webtimer">![weekly average](/imgs/posts/fca_2.png)</a>
+<a href="/imgs/posts/fca_2.png" data-lightbox="image-2" data-title="2">![2](/imgs/posts/fca_2.png)</a>
