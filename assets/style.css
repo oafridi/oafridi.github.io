@@ -23,3 +23,36 @@ nav a{display:inline-flex;align-items:center;min-height:44px}
 .about-section p.education{color:var(--green);font-size:12px}
 @media(max-width:760px){nav .writing-nav{display:none}.experience-section{padding:35px 0 40px}.experience-section .section-heading h2{font-size:26px}.career-list li{grid-template-columns:1fr;gap:10px;padding:22px 0}.career-list p:not(.career-role){font-size:13px}.hero .eyebrow{max-width:300px;font-size:9px;letter-spacing:1px}.hero .intro{max-width:380px}footer>div{flex-wrap:wrap;gap:18px}}
 @media(max-width:380px){.wordmark{font-size:11px;gap:7px}nav{gap:11px;font-size:10px}.hero .eyebrow{font-size:8px;letter-spacing:.8px}.hero h1{font-size:35px}}
+/* Make the next steps and evidence easy to scan. */
+.hero-actions{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin-top:22px}
+.hero-actions a{display:inline-flex;align-items:center;justify-content:center;gap:17px;min-height:42px;padding:0 14px;font-size:11px;font-weight:500;border-radius:2px;transition:background .2s,color .2s}
+.hero-actions .action-primary{background:var(--ink);color:var(--paper);border:1px solid var(--ink)}
+.hero-actions .action-primary:hover{background:var(--green);border-color:var(--green)}
+.hero-actions .action-secondary{border:1px solid #bfc5b7;background:transparent}
+.hero-actions .action-secondary:hover{background:#e9ede3}
+.hero-actions .action-plain{padding-left:3px;padding-right:0;gap:8px}
+.hero-actions .action-plain:hover{color:var(--orange)}
+.career-context{font-size:10px;line-height:1.7;color:var(--muted);margin-top:17px;max-width:430px}
+.career-context span{margin:0 4px}
+.project-contribution{display:block;font-size:11px;color:var(--ink);line-height:1.7;margin-top:9px;max-width:300px}
+.project-read{display:inline-flex;align-items:center;gap:13px;font-size:11px;color:var(--green);margin-top:15px;padding-bottom:4px;border-bottom:1px solid #bcc6b4}
+.project-open:hover .project-read{color:var(--orange)}
+.working-style{display:grid;grid-template-columns:1.05fr 1fr 1fr;gap:32px;margin-top:38px;padding-top:28px;border-top:1px solid var(--line)}
+.working-style h3{font-family:Georgia,serif;font-size:22px;font-weight:400;line-height:1.25;letter-spacing:-.5px;max-width:240px;margin-top:11px}
+.working-style h4{font-size:12px;font-weight:500;margin:0 0 9px}
+.working-style p:not(.eyebrow){font-size:12px;line-height:1.8;color:var(--muted);max-width:300px}
+.dialog-meta{font-size:11px;color:var(--muted);line-height:1.7;margin-top:14px}
+.contact-section{display:grid;grid-template-columns:1.2fr 1fr;gap:70px;padding:42px;margin-bottom:60px;background:#e9ede3;border-radius:3px}
+.contact-section h2{font-family:Georgia,serif;font-size:35px;line-height:1.15;letter-spacing:-1px;font-weight:400;margin:16px 0 20px}
+.contact-intro>p:not(.eyebrow){font-size:13px;line-height:1.8;color:var(--muted);max-width:375px}
+.contact-email{display:inline-flex;gap:15px;align-items:center;font-size:19px;letter-spacing:-.4px;border-bottom:1px solid #a3ae99;padding-bottom:7px;margin-top:24px;overflow-wrap:anywhere}
+.contact-intro .contact-location{font-size:11px!important;margin-top:12px}
+.contact-options>div:not(.contact-profiles){border-bottom:1px solid #cdd5c5;padding-bottom:20px;margin-bottom:20px}
+.contact-options h3{font-size:14px;font-weight:500;margin-bottom:9px}
+.contact-options p{font-size:12px;color:var(--muted);line-height:1.8;margin-bottom:9px;max-width:320px}
+.contact-options a{font-size:11px;display:inline-flex;gap:15px;align-items:center;min-height:36px}
+.contact-options a:hover,.contact-email:hover{color:var(--orange)}
+.contact-profiles{display:flex;flex-wrap:wrap;gap:23px}
+@media(max-width:1050px) and (min-width:761px){.hero h1{font-size:43px}.hero-actions{gap:9px}.hero-actions a{padding:0 11px;gap:10px}.hero-actions .action-plain{padding-left:0}.career-context{font-size:9px}.contact-section{gap:35px;padding:32px}.working-style{gap:23px}}
+@media(max-width:760px){nav .about-nav{display:none}nav .contact-link{display:inline-flex;margin-left:0}.hero-actions{gap:10px;margin-top:19px}.hero-actions a{min-height:44px;padding:0 12px}.hero-actions .action-plain{font-size:10px;padding:0;gap:5px}.career-context{font-size:9px;margin-top:13px;max-width:350px}.hero-art{height:170px}.working-style{grid-template-columns:1fr;gap:23px;margin-top:30px;padding-top:25px}.working-style h3,.working-style p:not(.eyebrow){max-width:100%}.working-style h3{font-size:24px}.contact-section{grid-template-columns:1fr;gap:30px;padding:25px 22px;margin-bottom:35px}.contact-section h2{font-size:30px}.contact-email{font-size:17px;gap:10px}.contact-intro>p:not(.eyebrow),.contact-options p{font-size:13px}.contact-options a{min-height:44px}.contact-profiles{gap:20px}.experience-section .section-heading{align-items:flex-start;flex-direction:column}.experience-section .quiet-link{margin-top:3px}}
+@media(max-width:380px){.hero h1{font-size:33px}.hero-actions{gap:8px}.hero-actions a{padding:0 10px;gap:9px;font-size:10px}.hero-actions .action-plain{gap:5px;font-size:9px}.contact-section{padding:24px 18px}.contact-email{font-size:15px;gap:6px}.contact-section h2{font-size:28px}}

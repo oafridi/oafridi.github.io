@@ -13,6 +13,9 @@ build, so their original URLs remain available.
   writing links, and About section.
 - `assets/app.js`: project detail text, links, dialog behavior, and 3D illustrations.
 - `assets/style.css`: visual design and responsive layouts.
+- `assets/osman-afridi-resume.pdf`: public two-page resume linked from the
+  introduction, experience section, and contact section. Update it alongside
+  the website when roles or achievements change.
 - `assets/three.module.js`: Three.js 0.160.1. Its license is in
   `assets/three.LICENSE.txt`.
 
